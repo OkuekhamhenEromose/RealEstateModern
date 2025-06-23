@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamHome Realty</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header with Sticky Navigation -->
+    <nav>
+        <div class="nav__content">
+            <div class="logo"><a href="#" aria-label="DreamHome Realty Logo">CHRealEstate</a></div>
+            <input type="checkbox" name="check" id="check" title="Open navigation menu" />
+            <label for="check" class="checkbox" aria-label="Open navigation menu">
+                <i class="ri-menu-line"></i>
+            </label>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#properties">Properties</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <button class="btn login-btn">Login</button>
+                <button class="btn signup-btn">Sign Up</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <!-- HOMEY -->
+        <div class="container">
+            <div class="hero-content">
+                <span class="badge">Vision for your life</span>
+                <h2 class="home_title">Find Your Dream <span class="span">Real Estate</span></h2>
+                <p class="home_description">
+                    Welcome to DreamHome Realty, where we turn your real estate dreams into reality. Whether you're
+                    buying,
+                    selling, or renting, our expert team is here to guide you every step of the way. Explore our
+                    listings
+                    and discover your perfect home today!
+                </p>
+                <div class="home_form">
+                    <form action="" class="form__project-search">
+                        <div class="form__top">
+                            <button class="form__type-toggle active">
+                                Buy
+                            </button>
+                            <button class="form__type-toggle">
+                                Sale
+                            </button>
+                            <button class="form__type-toggle">
+                                Rent
+                            </button>
+                        </div>
+                        <div class="form__bottom">
+                            <div class="input_group">
+                                <div class="icon">
+                                    <i class="fa-solid fa-map-pin"></i>
+                                </div>
+                                <input type="text" placeholder="Search for Locations" aria-label="Search for location"
+                                    class="input_field">
+                            </div>
+
+                            <div class="input_group">
+                                <div class="icon">
+                                    <i class="fa-solid fa-house"></i>
+                                </div>
+                                <input type="text" placeholder="Search for Property" aria-label="Search for properties"
+                                    class="input_field">
+                            </div>
+                            <div class="input_group">
+                                <div class="icon">
+                                    <i class="fa-solid fa-dollar-sign"></i>
+                                </div>
+                                <input type="text" placeholder="Search for Price" aria-label="Search for price"
+                                    class="input_field">
+                            </div>
+                            <button class="btn" aria-label="Search">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <span>Search</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <div class="section__container"> -->
+    <!-- <div class="hero-content">
+                <h1>Find Your Dream Home Today</h1>
+                <p>Discover the perfect property that matches your lifestyle and budget with our expert real estate
+                    services.</p>
+                <button class="btn enquiry-btn">Make an Enquiry</button>
+            </div> -->
+    <!-- </div> -->
+    <!-- <div class="hero-image"></div> -->
+
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                alt="Luxury Home">
+            <img src="./assets/aboutreal1.jpg" alt="">
+        </div>
+        <div class="about-content">
+            <h2>About Our Company</h2>
+            <p>With over 20 years of experience in the real estate market, we've helped thousands of clients find their
+                perfect homes. Our team of dedicated professionals is committed to providing exceptional service.</p>
+
+            <div class="features">
+                <div class="feature">
+                    <i class="fas fa-home"></i>
+                    <h3>500+ Properties</h3>
+                    <p>Wide selection of homes to choose from</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-medal"></i>
+                    <h3>Award Winning</h3>
+                    <p>Recognized for excellence in service</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-users"></i>
+                    <h3>Happy Clients</h3>
+                    <p>98% customer satisfaction rate</p>
+                </div>
+            </div>
+
+            <button class="btn about-btn">Learn More</button>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2 class="section-title">Our Services</h2>
+        <p class="section-subtitle">We provide property sales, rentals, management, and investment guidance to help clients buy, sell, or lease with ease and confidence.
+        </p>
+
+        <div class="service-cards">
+            <div class="service-card">
+                <i class="fas fa-home"></i>
+                <h3>Buy a Home</h3>
+                <p>Find your dream home from our extensive listings of properties across the city.</p>
+                <button class="btn service-btn">Explore</button>
+            </div>
+
+            <div class="service-card">
+                <i class="fas fa-key"></i>
+                <h3>Rent a Home</h3>
+                <p>Discover rental properties that fit your budget and lifestyle requirements.</p>
+                <button class="btn service-btn">Find Rentals</button>
+            </div>
+
+            <div class="service-card">
+                <i class="fas fa-dollar-sign"></i>
+                <h3>Sell a Home</h3>
+                <p>Get the best value for your property with our expert marketing and sales strategies.</p>
+                <button class="btn service-btn">List Property</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Properties Section -->
+    <section id="properties" class="properties">
+        <h2 class="section-title">Featured Properties</h2>
+        <p class="section-subtitle">Browse our latest listings</p>
+
+        <div class="property-cards">
+            <!-- Property cards will be dynamically inserted here by JavaScript -->
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <h2 class="section-title">Client Testimonials</h2>
+        <p class="section-subtitle">What our clients say about us</p>
+
+        <div class="testimonial-cards">
+            <!-- Testimonials will be dynamically inserted here by JavaScript -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 class="section-title">Contact Us</h2>
+        <p class="section-subtitle">Get in touch for more information</p>
+
+        <div class="contact-container">
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <input type="tel" placeholder="Your Phone">
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn submit-btn">Send Message</button>
+            </form>
+
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>123 Real Estate Ave, Property City, PC 12345</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <p>+1 (555) 123-4567</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>info@dreamhomerealty.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>DreamHome Realty</h3>
+                <p>Your trusted partner in finding the perfect home for your family and future.</p>
+                <div class="social-icons">
+                    <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#properties">Properties</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Subscribe to get updates on new properties</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email" required>
+                    <button type="submit" class="btn subscribe-btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2023 DreamHome Realty. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

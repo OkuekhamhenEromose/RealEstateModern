@@ -1,0 +1,166 @@
+
+BEFORE SERVICES 
+
+.hero {
+    position: relative;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),
+        url('assets/chrealestate3.png') fixed no-repeat center center;
+    background-size: 140% auto; /* Start zoomed out */
+    padding: 60px 0;
+    margin-block-start: 0;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    left: 0;
+    overflow: hidden;
+    animation: backgroundZoomIn 3s ease-out forwards;
+}
+
+@keyframes backgroundZoomIn {
+    from {
+        background-size: 140% auto;
+    }
+    to {
+        background-size: 100% auto;
+    }
+}
+
+/* Optional: Add fade-in effect for smoother transition */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1.5s ease-out forwards;
+    z-index: -1;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+
+.services {
+    padding: 100px 5%;
+    background: var(--white);
+}
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  /* margin-bottom: 1rem; */
+}
+
+.section-subtitle {
+  max-width: 600px; /* Optimal reading width */
+  margin: 0 auto; /* Centers the text block */
+  padding: 0 20px; /* Prevents edge sticking on mobile */
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.6; /* Better readability */
+  color: #555; /* Slightly softer than pure black */
+  margin-bottom: 1rem;
+}
+
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.service-card {
+    flex: 1 1 300px;
+    max-width: 350px;
+    padding: 40px 30px;
+    background: var(--light-color);
+    border-radius: 15px;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.service-card i {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--secondary-color);
+}
+
+.service-card p {
+    color: var(--gray);
+    margin-bottom: 20px;
+}
+
+.service-btn {
+    background: var(--primary-color);
+    color: var(--white);
+}
+
+.service-btn:hover {
+    background: var(--secondary-color);
+}
+
+CARD LAYOUT AND SETTING OF BUTTON
+
+
+
+.service-card {
+    flex: 1 1 300px;
+    max-width: 350px;
+    padding: 40px 30px;
+    background: var(--light-color);
+    border-radius: 15px;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.service-card i {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--secondary-color);
+}
+
+.service-card p {
+    color: var(--gray);
+    margin-bottom: 20px;
+}
+
+.service-btn {
+    background: var(--primary-color);
+    color: var(--white);
+}
+
+.service-btn:hover {
+    background: var(--secondary-color);
+}
