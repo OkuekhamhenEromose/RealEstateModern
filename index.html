@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DreamHome Realty</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -11,31 +12,34 @@
 
 <body>
     <!-- Header with Sticky Navigation -->
-    <nav>
-        <div class="nav__content">
-            <div class="logo"><a href="#" aria-label="DreamHome Realty Logo">CHRealEstate</a></div>
-            <input type="checkbox" name="check" id="check" title="Open navigation menu" />
-            <label for="check" class="checkbox" aria-label="Open navigation menu">
-                <i class="ri-menu-line"></i>
-            </label>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#properties">Properties</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="auth-buttons">
-                <button class="btn login-btn">Login</button>
-                <button class="btn signup-btn">Sign Up</button>
-            </div>
+<nav>
+    <div class="nav__content">
+        <div class="logo"><a href="#home" aria-label="DreamHome Realty Logo">CHRealEstate</a></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#properties">Properties</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+        </ul>
+        <div class="auth-buttons">
+            <button class="btn login-btn">Login</button>
+            <button class="btn signup-btn">Sign Up</button>
         </div>
-    </nav>
+        <button class="nav-toggle-btn" aria-label="Toggle menu" aria-expanded="false">
+            <span class="menu-icon">
+    <i class="fas fa-bars"></i> <!-- Menu (hamburger) icon -->
+</span>
+<span class="close-icon">
+    <i class="fas fa-times"></i> <!-- Close (X) icon -->
+</span>
+        </button>
+    </div>
+</nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <!-- HOMEY -->
+        <div class="hero-background"></div>
         <div class="container">
             <div class="hero-content">
                 <span class="badge">Vision for your life</span>
@@ -50,13 +54,13 @@
                 <div class="home_form">
                     <form action="" class="form__project-search">
                         <div class="form__top">
-                            <button class="form__type-toggle active">
+                            <button type="button" class="form__type-toggle active">
                                 Buy
                             </button>
-                            <button class="form__type-toggle">
+                            <button type="button" class="form__type-toggle">
                                 Sale
                             </button>
-                            <button class="form__type-toggle">
+                            <button type="button" class="form__type-toggle">
                                 Rent
                             </button>
                         </div>
@@ -93,16 +97,6 @@
             </div>
         </div>
     </section>
-    <!-- <div class="section__container"> -->
-    <!-- <div class="hero-content">
-                <h1>Find Your Dream Home Today</h1>
-                <p>Discover the perfect property that matches your lifestyle and budget with our expert real estate
-                    services.</p>
-                <button class="btn enquiry-btn">Make an Enquiry</button>
-            </div> -->
-    <!-- </div> -->
-    <!-- <div class="hero-image"></div> -->
-
 
     <!-- About Section -->
     <section id="about" class="about">
@@ -134,7 +128,7 @@
                 </div>
             </div>
 
-            <button class="btn about-btn">Learn More</button>
+            <button type="button" class="btn about-btn">Learn More</button>
         </div>
     </section>
 
@@ -187,44 +181,13 @@
             <!-- Testimonials will be dynamically inserted here by JavaScript -->
         </div>
     </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <h2 class="section-title">Contact Us</h2>
-        <p class="section-subtitle">Get in touch for more information</p>
-
-        <div class="contact-container">
-            <form class="contact-form">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <input type="tel" placeholder="Your Phone">
-                <textarea placeholder="Your Message" required></textarea>
-                <button type="submit" class="btn submit-btn">Send Message</button>
-            </form>
-
-            <div class="contact-info">
-                <div class="info-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <p>123 Real Estate Ave, Property City, PC 12345</p>
-                </div>
-                <div class="info-item">
-                    <i class="fas fa-phone"></i>
-                    <p>+1 (555) 123-4567</p>
-                </div>
-                <div class="info-item">
-                    <i class="fas fa-envelope"></i>
-                    <p>info@dreamhomerealty.com</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
+    
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-section">
-                <h3>DreamHome Realty</h3>
-                <p>Your trusted partner in finding the perfect home for your family and future.</p>
+                <h3 class="footer-logo">CHRealEstate</h3>
+                <p>Your trusted </p>
                 <div class="social-icons">
                     <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
                     <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
@@ -234,28 +197,38 @@
             </div>
 
             <div class="footer-section">
-                <h3>Quick Links</h3>
+                <h3>Useful Links </h3>
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#properties">Properties</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#home">Marketing & SEO</a></li>
+                    <li><a href="#about">Startup</a></li>
+                    <li><a href="#services">Finance Solution</a></li>
+                    <li><a href="#properties">Food</a></li>
+                    <li><a href="#">Travel</a></li>
                 </ul>
             </div>
-
             <div class="footer-section">
-                <h3>Newsletter</h3>
-                <p>Subscribe to get updates on new properties</p>
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Appointment</a></li>
+                    <li><a href="#">Properties</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us & Subcribe <div class="underline"><span></span></div></h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 DreamHome St, City, Country</p>
+                <p><i class="fas fa-phone"></i> +234-9067784278</p>
                 <form class="newsletter-form">
                     <input type="email" placeholder="Your Email" required>
                     <button type="submit" class="btn subscribe-btn">Subscribe</button>
                 </form>
+                <p>Subscribe to our newsletter for the latest updates and offers.</p>
             </div>
-        </div>
-
+            <hr>
         <div class="footer-bottom">
-            <p>&copy; 2023 DreamHome Realty. All Rights Reserved.</p>
+            <p>&copy; 2023 Char|Dev Work. All Rights Reserved.</p>
         </div>
     </footer>
 
