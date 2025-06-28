@@ -70,7 +70,7 @@ const properties = [
         sqft: 1200,
         price: "$350,000",
         statusbtn: "sale",
-        image: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+        image: "assets/aboutreal3.jpg"
     },
     {
         id: 2,
@@ -81,7 +81,7 @@ const properties = [
         sqft: 3200,
         price: "$1,200,000",
         statusbtn: "sale",
-        image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+        image: "assets/chrealestate2.jpg"
     },
     {
         id: 3,
@@ -92,7 +92,7 @@ const properties = [
         sqft: 600,
         price: "$1,200/month",
         statusbtn: "rent",
-        image: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+        image: "assets/project-img.jpeg"
     }
 ];
 

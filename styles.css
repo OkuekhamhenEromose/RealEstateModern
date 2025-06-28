@@ -98,10 +98,14 @@ ul {
 
 .section-subtitle {
   text-align: center;
-  color: var(--gray);
-  margin-bottom: 50px;
   font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.6; /* Better readability */
+  color: var(--dark-color); /* Slightly softer than pure black */
   font-family: var(--another-font);
+  max-width: 600px; /* Optimal reading width */
+  margin: 0 auto 2rem; /* Centers the text block */
+  padding: 0 20px; /* Prevents edge sticking on mobile */
 }
 
 nav {
@@ -515,22 +519,6 @@ nav ul li a:hover {
   bottom: 0;
   background: rgba(0, 0, 0, 0.3); /* Dark overlay (adjust 0.4-0.7) */
   z-index: -1;
-}
-.section-title {
-  text-align: center;
-  font-size: 2rem;
-}
-
-.section-subtitle {
-  max-width: 600px; /* Optimal reading width */
-  margin: 0 auto; /* Centers the text block */
-  padding: 0 20px; /* Prevents edge sticking on mobile */
-  text-align: center;
-  font-size: 1.1rem;
-  font-weight: 600;
-  line-height: 1.6; /* Better readability */
-  color: var(--dark-color); /* Slightly softer than pure black */
-  margin-bottom: 1rem;
 }
 
 .service-cards {
@@ -1203,7 +1191,7 @@ footer {
     width: 80%; /* Optional: control button width */
     max-width: 200px; /* Optional: maximum button width */
   }
-  
+
   .footer {
     padding: 50px 0 25px;
     font-size: 15px;
