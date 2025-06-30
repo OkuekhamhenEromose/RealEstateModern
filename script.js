@@ -1,5 +1,30 @@
 
 document.addEventListener('DOMContentLoaded', function() {
+
+     ScrollReveal({ 
+        reset: true,
+        distance: '60px',
+        duration: 2500,
+        delay: 400
+      });
+      ScrollReveal().reveal('nav', { delay: 500, origin: 'top' });
+      ScrollReveal().reveal('span', { delay: 700, origin: 'left' });
+      ScrollReveal().reveal('.home_description', { delay: 900, origin: 'left' });
+      ScrollReveal().reveal('.home_form', { delay: 1200, origin: 'left' });
+      ScrollReveal().reveal('.about-image', { delay: 500, origin: 'left' });
+      ScrollReveal().reveal('.about-content', { delay: 500, origin: 'right' });
+      ScrollReveal().reveal('.about-content .btn', { delay: 500, origin: 'bottom' });
+      ScrollReveal().reveal('.services .section-title, .services .section-subtitle', { delay: 500, origin: 'top' });
+      ScrollReveal().reveal('.service-cards .service-card', { delay: 500, origin: 'bottom', interval: 300 });
+      ScrollReveal().reveal('.service-card .btn', { delay: 500, origin: 'bottom', interval: 300 });
+      ScrollReveal().reveal('.properties .section-title, .properties .section-subtitle', { delay: 500, origin: 'top'});
+      ScrollReveal().reveal('.property-cards', { delay: 500, origin: 'bottom',});
+      ScrollReveal().reveal('.testimonials .section-title, .testimonials .section-subtitle', { delay: 500, origin: 'top',});
+      ScrollReveal().reveal('.testimonial-cards', { delay: 500, origin: 'bottom',});
+      ScrollReveal().reveal('.footer-section', { delay: 500, origin: 'bottom', interval: 300});     
+
+
+
     // ===== Mobile Navigation =====
     const navToggle = document.querySelector('.nav-toggle-btn');
     const navLinks = document.querySelector('.nav-links');
